@@ -3,7 +3,11 @@ This is a small script which helps you to set up a basic React web application.
 
 # How to use
 
-Install `create-web-app`:
+Download `create-web-app`:
+```sh
+$ git clone https://github.com/xumaple/create-web-app && cd create-web-app
+```
+And install it:
 ```sh
 $ sudo python3 setup.py install
 ```
