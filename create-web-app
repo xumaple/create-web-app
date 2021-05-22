@@ -257,15 +257,15 @@ This will cause the JS compiler to watch for changes indefinitely and update as 
 
 # src/init
 '/src/__init__.py' : '''import flask
-import pyrebase
 
 app = flask.Flask(__name__)
 app.config.from_object('config')
 
 app.config.from_envvar('APP_SETTINGS', silent=True)
 
+# import pyrebase
 # firebase = pyrebase.initialize_app({
-#    TODO if using firebase
+#    TODO: uncomment if using firebase
 # })
 
 # db = firebase.database()
@@ -295,7 +295,7 @@ import ReactDOM from 'react-dom';
 
 function Index(props) {
     return (
-        <div>'Hello! Welcome to {{name}} :)</div>
+        <div>Hello! Welcome to {{name}} :)</div>
     );
 }
 
